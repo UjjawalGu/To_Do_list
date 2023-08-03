@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e8e5e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+.container {
+  height: 83vh;
+  width: 60vh;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 1s;
+  overflow-y: scroll;
+}
+.details-box {
+  /* background-color: aqua; */
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* .date-box {
+  padding: 1rem;
+} */
+.date {
+  font-size: 1.5rem;
+  color: #5a528c;
+  font-weight: bolder;
+}
+.month {
+  color: #00000060;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+ul li{
+  font-size: 1.2rem;
+  color: #2e2e2ee0;
+  padding: 1.2rem 8px 1.2rem 4rem;
+  position: relative;
+  word-wrap: break-word;
+  word-break: break-all;
+  list-style: none;
+}
+
+ul li::before{
+  content: "";
+  background-image: url(unchecked.png);
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+background-repeat: no-repeat;
+background-size: contain;  
+top: 1.2rem;
+left: 8px;
+border-radius: 50%;
+cursor: pointer;
+background-color: transparent;
+}
+.checked{
+  text-decoration: line-through;
+}
+.checked::before{
+  content: "";
+  background-image: url(Untitled\ design.png);
+  height: 2.5rem;
+  width: 2.5rem;
+  position: absolute;
+background-repeat: no-repeat;
+background-size: contain;  
+background-color: transparent;
+
+}
+.addbtn-box {
+  position: absolute;
+  bottom: 2.5%;
+  font-size: 3rem;
+  border-radius: 50%;
+  /*border: 2px solid #4ed99f; */
+  padding: 1rem 1.6rem;
+  background-color: #4ed99f;
+  color: #fff;
+  cursor: pointer;
+}
+.bg {
+  background-color: #dc5961;
+}
+.addbtn {
+  transform: rotate(45deg);
+  /* padding: 1rem 1.6rem; */
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #e8e5e0;
+  padding: 2rem;
+  border-radius: 8px;
+}
+.task-heading {
+  font-size: 1.5rem;
+}
+input {
+  padding: 7px 2rem;
+  outline: 2px solid #c7c7c7;
+  width: 90%;
+  margin: 1rem;
+  border: none;
+  font-size: 1.1rem;
+  background-color: #e7e7e7bd;
+}
+.save {
+  padding: 7px 1rem;
+  width: 30%;
+  margin-left: auto;
+  margin-top: 1rem;
+  background-color: transparent;
+  border: none;
+  color: #4ed99f;
+}
+.save:hover {
+  background-color: #7575750e;
+}
+.overlay {
+  background: linear-gradient(
+    to right,
+    rgba(49, 49, 49, 0.2),
+    rgba(49, 49, 49, 0.2)
+  );
+}
+.display {
+  display: none;
+}
+
+.clear{
+padding: 7px 2rem;
+border: 3px solid #4ed99f;
+border-radius: 4px;
+background-color: #fff;
+transition: all .3s;
+cursor: pointer;
+}
+.clear:hover{
+  background-color: #4ed99f;
+  color: #fff;
+}
+.clear:active{
+  padding: 7px 3rem;
+}
